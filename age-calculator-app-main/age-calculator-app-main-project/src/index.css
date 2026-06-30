@@ -1,0 +1,80 @@
+body{
+  background-color: #F0F0F0;
+}
+
+.card-container {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.card{
+  border-bottom-right-radius: 100px;
+  width: 50%;
+  position: relative;
+}
+
+.card .input{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.card .input-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5%;
+}
+
+#daySelect, #monthSelect{
+  width: 90px;
+}
+
+#yearSelect{
+  width: 110px;
+}
+
+.card .circle{
+  border-radius: 100%;
+  width: 2.7rem;
+  height: 2.7rem;
+  background-color: #864DFD;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 2vh;
+  cursor: pointer;
+}
+
+.card .arrow{
+  width: 1.5rem;
+}
+
+::placeholder{
+  font-weight: bold;
+  color: #8A8A8A;
+}
+
+.card .title{
+  font-style: italic;
+  font-size: 3.5rem;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+
+.age-display span{
+  color: #864DFD;
+}
+
+.card .label-container{
+  display: flex;
+  flex-direction: column;
+}

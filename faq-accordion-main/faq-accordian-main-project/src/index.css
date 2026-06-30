@@ -1,0 +1,83 @@
+@font-face {
+  font-family: 'WorkSans';
+  src: url('C:/Users/bayan/vuedale_training/frontend_mentor_projects/faq-accordion-main/assets/fonts/WorkSans-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body{
+  margin: 0;
+  background-color: #F9EEFF;
+  font-family: 'WorkSans';
+}
+
+.card-container {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.bg-picture{
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card{
+  z-index: 2;
+  position: absolute;
+  width: 35%;
+  box-shadow: 2px 4px 10px 10px rgba(0, 0, 0, 0.05);;
+}
+
+.title{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 0;
+  margin: 0;
+  color: #331537;
+}
+
+.title .icon-star{
+  margin-right: 5%;
+  margin-top: 1%;
+}
+
+.title span{
+  font-weight: bold;
+  font-size: 3rem;
+  margin: 0;
+}
+
+.card .question{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: bold;
+  justify-content: space-between;
+  color: #331537;
+}
+
+.card .answer{
+  color: #8F8192;
+}
+
+.card .icon{
+  justify-self: end;
+  align-self: end;
+}
+
+.card .icon:hover{
+  cursor: pointer;
+}
+
+.hidden{
+  display: none;
+}
+
