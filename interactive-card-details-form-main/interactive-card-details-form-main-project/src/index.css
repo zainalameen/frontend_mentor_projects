@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Space Grotesk', sans-serif !important;
+}
+
+.container{
+  position: relative;
+}
+
+#bg-desktop{
+  width: 30%;
+  min-height: 100dvh;
+}
+
+/*FRONT*/
+.card-front-container{
+  background-image: url('C:/Users/bayan/vuedale_training/frontend_mentor_projects/interactive-card-details-form-main/images/bg-card-front.png');
+  background-position: center;
+  background-size: cover;
+  color: white; 
+  width: 27%;
+  height: 26.3%;
+  position: absolute;
+  top: 18%;
+  left: 10%;
+  z-index: 1;
+  box-shadow: 2px 4px 10px 10px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+}
+
+.card-front-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5%;
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 80%;
+}
+
+.upper-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80%;
+}
+
+.upper-content .card-number{
+  text-align: center;
+  font-size: 1.8rem;
+  color:white;
+  font-family: 'Space Grotesk', sans-serif !important;
+}
+
+.upper-content #card-logo{
+  width: 25%;
+}
+
+.lower-content{
+  justify-self: flex-end;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card-holder-name, .card-exp-date, .card-cvc{
+  color: white;
+  font-family: 'Space Grotesk', sans-serif !important;
+
+}
+
+/*BACK*/
+.card-back-container{
+  background-image: url('C:/Users/bayan/vuedale_training/frontend_mentor_projects/interactive-card-details-form-main/images/bg-card-back.png');
+  background-position: center;
+  background-size: cover;
+  color: white; 
+  width: 27%;
+  height: 26.3%;
+  position: absolute;
+  top: 50%;
+  left: 18%;
+  z-index: 1;
+  box-shadow: 2px 4px 10px 10px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+}
+
+.card-back-content{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  z-index: 1;
+  position: absolute;
+  top: 9%;
+  right: 12%;
+  width: 90%;
+  height: 80%;
+}
+
+.card-back-content .card-cvc{
+  text-align: right;
+}
+
+.form{
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  font-family: 'Space Grotesk', sans-serif !important;
+}
+
+Form{
+    font-family: 'Space Grotesk', sans-serif !important;
+}
+
+.form-row{
+  display: flex;
+  flex-direction: row;
+}
+
+.exp-date{
+  display: flex;
+  flex-direction: row;
+}
+
+/*errors*/
+.ant-form-item-label > label {
+  font-weight: bold !important;
+  font-size: 0.75rem !important;
+  letter-spacing: 2px !important;
+  color: #21092F !important; 
+}
+
+.ant-form-item-explain-error {
+  color: #FF5252 !important; 
+  font-size: 0.7rem !important;
+  margin-top: 4px !important;
+}
+
+.ant-input:focus, .ant-input-focused {
+  border-color: #6348FE !important;
+  box-shadow: 0 0 0 2px rgba(99, 72, 254, 0.1) !important;
+}
+
+.ant-input-status-error {
+  border-color: #FF5252 !important;
+}
+.ant-input-status-error:focus, .ant-input-status-error-focused {
+  box-shadow: 0 0 0 2px rgba(255, 82, 82, 0.1) !important;
+}
+
+.ant-btn-primary {
+  background-color: #21092F !important;
+  border-color: #21092F !important;
+  height: 48px !important;
+  border-radius: 8px !important;
+  font-size: 1rem !important;
+  font-weight: 500 !important;
+}
+.ant-btn-primary:hover {
+  background-color: #3b184e !important;
+}
+
